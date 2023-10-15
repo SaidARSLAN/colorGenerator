@@ -22,17 +22,19 @@ html,body,#root {
     .__header-card {
         display: flex;
         input[type=text] {
-            padding: 8px 0px;
-            width: 50%;
+            padding: 12px;
+            width: 60%;
+            border: none;
+            font-size: 24px;
         }
         input[type=color] {
-            height: 2.6rem;
+            height: 3rem;
             cursor: pointer;
             border: none;
         }
         button {
-            padding: 12px 8px;
-            border-radius: 5px;
+            padding: 12px 12px;
+            border-radius: 2px;
             border: none;
             background-color: #000;
             color: white;
@@ -41,4 +43,6 @@ html,body,#root {
             cursor: pointer;
         }
     }
+}
+.__color-list {
 }
