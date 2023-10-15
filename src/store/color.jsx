@@ -4,7 +4,8 @@ import { createSlice } from "@reduxjs/toolkit"
 
 
 const initialState = {
-    color : "#201313"
+    color : "#201313",
+    possibleColors : []
 }
 
 const color = createSlice({
@@ -13,6 +14,7 @@ const color = createSlice({
     reducers: {
         SET_COLOR : (state,action) => {
             state.color = action.payload
+            state.possibleColors = action.payload
         }
     }
 })

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_COLOR } from '../store/color';
+import findAllPossibleColors from '../helpers/utils';
 
 const Header = () => {
 
@@ -8,7 +9,7 @@ const Header = () => {
     const [colorName, setColorName] = useState(color);
     const dispatch = useDispatch();
     const handleClick = () => {
-        dispatch(SET_COLOR(colorName))
+        dispatch(SET_COLOR(findAllPossibleColors(colorName)));
     }
   return (
     <section className='__header'>

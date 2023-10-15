@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ColorCard = () => {
+const ColorCard = ({color}) => {
   return (
-    <div>ColorCard</div>
+    <div style={{background:color}} className='colorCard'>
+        {color}
+    </div>
   )
 }
 

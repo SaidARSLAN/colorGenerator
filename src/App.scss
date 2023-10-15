@@ -45,4 +45,16 @@ html,body,#root {
     }
 }
 .__color-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 12px;
+    padding: 0px 0px 24px 0px;
+    .colorCard {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 }
